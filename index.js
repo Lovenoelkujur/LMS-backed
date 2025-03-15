@@ -23,7 +23,7 @@ app.use(cookieParser());
 
 // Cors
 app.use(cors({
-    origin : "https://lms-frontend-blond-psi.vercel.app",
+    origin : ["http://localhost:5173", "https://lms-frontend-blond-psi.vercel.app"],
     credentials : true,
 }));
 

@@ -47,8 +47,8 @@ const createCheckoutSession = async(req, res) => {
               },
             ],
             mode: "payment",
-            success_url: `https://lms-backed.onrender.com/course-progress/${courseId}`, // once payment successful redirect to course progress page
-            cancel_url: `https://lms-backed.onrender.com/course-detail/${courseId}`,
+            success_url: `https://lms-frontend-blond-psi.vercel.app/${courseId}`, // once payment successful redirect to course progress page
+            cancel_url: `https://lms-frontend-blond-psi.vercel.app/course-detail/${courseId}`,
             metadata: {
               courseId: courseId,
               userId: userId,
