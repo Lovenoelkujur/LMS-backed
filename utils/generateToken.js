@@ -8,7 +8,7 @@ const generateToken = (res, user, message) => {
         .cookie("token", token, 
             {
                 httpOnly : true, 
-                sameSite : "None", 
+                sameSite : "strict", 
                 maxAge : 24 * 60 * 60 * 1000,      // 1 day
             }
         )
